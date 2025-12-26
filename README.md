@@ -1,4 +1,6 @@
-# 🌾 AgriDashboard v1.0 https://agunggema-debug.github.io/agri-dashboard/
+# 🌾 AgriDashboard v1.0
+
+https://agunggema-debug.github.io/agri-dashboard/
 
 > **Platform Monitoring Distribusi & Pemasaran Produk Unggulan Agrikultur**
 
@@ -46,9 +48,9 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek di komputer Anda:
 
 📦 Build & Deployment
 Proyek ini dikonfigurasi menggunakan Static Site Generation (SSG) untuk di-host di GitHub Pages.
-``       # Untuk menghasilkan folder .output/public (statis)
+``     # Untuk menghasilkan folder .output/public (statis)
 npx nuxi generate   `
-   ``
+ ``
 Deployment dilakukan secara otomatis setiap kali Anda melakukan push ke branch main melalui alur kerja GitHub Actions.
 
 📁 Struktur Folder - components/ - Komponen UI Vue (termasuk grafik).

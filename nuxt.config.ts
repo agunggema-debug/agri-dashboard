@@ -1,26 +1,30 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
-  ssr: false, // Penting agar aplikasi berjalan sebagai SPA di GitHub Pages
-
-  modules: ["@nuxtjs/tailwindcss"],
+  ssr: false,
 
   app: {
-    // Pastikan '/' di awal dan di akhir. Sesuaikan dengan nama repo Anda.
+    // Pastikan diawali dan diakhiri dengan slash
     baseURL: "/agri-dashboard/",
-    buildAssetsDir: "assets", // Mengubah '_nuxt' menjadi 'assets' agar tidak diblokir GitHub
+    // Mengubah '_nuxt' menjadi 'assets' karena GitHub Pages
+    // terkadang memblokir folder dengan awalan underscore
+    buildAssetsDir: "assets",
   },
 
   experimental: {
-    // Mematikan payload extraction mencegah Nuxt mencari file _payload.json
+    // Ini akan menghentikan pencarian file _payload.json
     payloadExtraction: false,
+    // Menghentikan pencarian manifest build yang menyebabkan error 404 pada .json
+    renderJsonPayloads: true,
   },
 
-  // Memastikan router menggunakan mode hash atau jalur yang sesuai dengan baseURL
-  router: {
-    options: {
-      hashMode: false,
+  // Mencegah preloading otomatis yang gagal pada environment GitHub Pages
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/"],
     },
   },
 
+  modules: ["@nuxtjs/tailwindcss"],
   compatibilityDate: "2024-04-03",
 });
