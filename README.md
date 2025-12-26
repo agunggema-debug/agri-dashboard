@@ -30,7 +30,7 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek di komputer Anda:
 1. **Clone Repository**
 
    ```
-   git clone [https://github.com/agunggema-debug/agri-Dashboard.git]
+   git clone [https://github.com/agunggema-debug/agri-dashboard.git]
    cd agri-Dashboard
 
    ```
@@ -47,10 +47,14 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek di komputer Anda:
    ```
 
 📦 Build & Deployment
+
 Proyek ini dikonfigurasi menggunakan Static Site Generation (SSG) untuk di-host di GitHub Pages.
-``     # Untuk menghasilkan folder .output/public (statis)
+
+```
+    # Untuk menghasilkan folder .output/public (statis)
 npx nuxi generate   `
- ``
+```
+
 Deployment dilakukan secara otomatis setiap kali Anda melakukan push ke branch main melalui alur kerja GitHub Actions.
 
 📁 Struktur Folder - components/ - Komponen UI Vue (termasuk grafik).
