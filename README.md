@@ -1,6 +1,7 @@
 # 🌾 AgriDashboard v1.0
 
 https://agunggema-debug.github.io/agri-dashboard/
+<img width="1909" height="883" alt="image" src="https://github.com/user-attachments/assets/345c1108-801a-4972-9463-53fd4cff87c3" />
 
 > **Platform Monitoring Distribusi & Pemasaran Produk Unggulan Agrikultur**
 
